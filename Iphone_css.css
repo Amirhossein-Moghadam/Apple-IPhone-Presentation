@@ -1,0 +1,290 @@
+body{
+    background: #ebebeb;
+}
+a{
+    cursor: pointer;
+}
+
+#container{
+    height: 599px;
+    width: 900px;
+    margin: 15% auto;
+    position: relative;
+    box-shadow: 4px 10px 20px rgba(55,52,73,0.4);
+}
+
+#background{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background: #ff7a7c;
+    clip-path: polygon(52% 0,100% 0,100% 100%,0% 100%);
+    z-index: -1;
+    transition: all 0.8s ease;
+}
+
+nav{
+    display: block;
+    float: right;
+    margin: 1em;
+    margin-top: 2.4em;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.navbar a{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #373449;
+    padding: 10px 10px;
+    background: rgb(226, 226, 226);
+}
+
+.navbar a:hover{
+    background: #34495e;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    color: white;
+}
+.navbar a:last-child{
+    background: #373449;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+.navbar a:last-child:hover{
+    background: #34495e;
+}
+.fa-apple{
+    font-size: 36px;
+    margin-top: 21px;
+    margin-left: 20px;
+    position: absolute;
+    transition: all 1s ease;
+}
+.fa-apple:hover{
+    color: darkorange;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.section{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 100%;
+    height: 80px;
+}
+
+.alta img{
+    height: 370px;
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    z-index: -1;
+}
+#Fix_pic{
+    filter: blur(200px);
+}
+
+.button{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.iphone1{
+    background: #5b5958;
+}
+.iphone2{
+    background: #dd3047;
+    left: 35px;
+}
+.iphone3{
+    background: #fee580;
+    left: 70px;
+}
+.iphone4{
+    background: #b3e4d0;
+    left: 105px;
+}
+.iphone5{
+    background:#cac4d6;
+    left:140px;
+}
+
+#rotate{
+    float: right;
+    margin: 1em;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#rotate_btn{
+    cursor: pointer;
+    right: 17.9em;
+    position: absolute;
+    margin-top: 143px;
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    padding: 10px 10px;
+    background: #373449;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+#rotate_btn:hover{
+    background: #34495e;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+h1{
+    font-family: sans-serif;
+    color: #ff7a7c;
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+#title{
+    transition: all 1s ease;
+
+}
+h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: -20px;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    color: #373449;
+}
+
+/* p{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0 45px;
+    text-transform: uppercase;
+    color: #373449;
+    margin-top: 430px;
+} */
+.desk{
+    position: absolute;
+    top: 77%;
+    /* display: inline-block; */
+    padding: 0 45px;
+    margin-top: 440px;
+}
+.fa-cc-apple-pay,.fa-facebook-square,.fa-twitter-square,.fa-youtube,.fa-instagram{
+    cursor: pointer;
+    font-size: 40px;
+    padding-right: 10px;
+    transition: all 1.5s ease;
+}
+.fa-cc-apple-pay:hover{
+    color: darkorange;
+    font-size: 50px;
+    /* box-shadow: 0px 3px 1px #666; */
+    transition:all 1.5s ease;
+    position: relative;
+    padding-right: 20px;
+}
+.fa-facebook-square:hover{
+    color: blue;
+    font-size: 50px;
+    /* box-shadow: ; */
+    transition:all 1.5s ease;
+    position: relative;
+    padding-right: 20px;
+}
+.fa-twitter-square:hover{
+    color: lightskyblue;
+    font-size: 50px;
+    /* box-shadow: ; */
+    transition:all 1.5s ease;
+    position: relative;
+    padding-right: 20px;
+}
+.fa-youtube:hover{
+    color: red;
+    font-size: 50px;
+    /* box-shadow: ; */
+    transition:all 1.5s ease;
+    position: relative;
+    padding-right: 20px;
+}
+.fa-instagram:hover{
+    color: rgb(247, 70, 70);
+    font-size: 50px;
+    /* box-shadow: ; */
+    transition:all 1.5s ease;
+    position: relative;
+    padding-right: 20px;
+}
+
+.look{
+    position: absolute;
+    color: #ededed;
+    opacity: 0.4;
+    right: -85px;
+    top: 205px;
+    font-size: 2.3em;
+    white-space: nowrap;
+    transform: rotate(90deg);
+}
+.highlight{
+    background-color: #ffdc7b;
+}
+.margin-top{
+    margin-top: 135px;
+
+}
+.less-margin{
+    margin-top: -35px;
+
+}
+
+
+
+#alta1{
+    height: 300px;
+    top: 110px;
+    right: 242px;
+}
+#alta2{
+    height: 300px;
+    top: 110px;
+    right: 242px;
+}
+#alta3{
+    height: 300px;
+    top: 110px;
+    right: 242px;
+}
+#alta4{
+    height: 300px;
+    top: 110px;
+    right: 242px;
+}
+#alta5{
+    height: 300px;
+    top: 110px;
+    right: 242px;
+}
