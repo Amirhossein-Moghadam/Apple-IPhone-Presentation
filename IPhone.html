@@ -1,0 +1,173 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="Iphone_css.css">
+    <link rel="stylesheet" href="IPhone_JS.js">
+    <title>IPhone 11 Series</title>
+</head>
+
+<body onload="AutoRotate()">
+    <div id="container"><i class="fab fa-apple"></i>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Buy Now</a>
+        </nav>
+
+        <div id="background"></div>
+        <div class="section">
+            <h1 id="title" class="margin-top">Iphone 11</h1>
+            <h2 class="less-margin">
+                get <span class="highlight">involved</span> with technology
+
+            </h2>
+            <br>
+            <h2>and <span class="highlight">enjoy</span> using it.</h2>
+
+            <h1 class="look">Find your Favorite</h1>
+            <div class="alta">
+                <img id="Fix_pic" src="Iphone(1).png" alt="">
+                <img id="alta5" src="iphone11-red-back.png" alt="">
+                <img id="alta4" src="iphone11-light green-back.png" alt="">
+                <img id="alta3" src="iphone11-yellow-back.png" alt="">
+                <img id="alta2" src="iphone11-black-back.png" alt="">
+                <img id="alta1" src="iphone11-purple-back.png" alt="">
+
+                <div class="button iphone1" id="iphone1" onclick="iphone1color()"></div>
+
+                <div class="button iphone2" id="iphone2" onclick="iphone2color()"></div>
+
+                <div class="button iphone3" id="iphone3" onclick="iphone3color()"></div>
+
+                <div class="button iphone4" id="iphone4" onclick="iphone4color()"></div>
+
+                <div class="button iphone5" id="iphone5" onclick="iphone5color()"></div>
+
+            </div>
+            <div id="rotate">
+                <input type="submit" value="Rotate" id="rotate_btn" onmousemove="iphonerotate()"
+                    onmouseout="iphoneback()">
+            </div>
+            <div class="desk">
+                <i class="fab fa-cc-apple-pay"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function AutoRotate() {
+        document.getElementById('alta2').style.transform = "rotate(-28deg)";
+        document.getElementById('alta2').style.transition = "all 3s ease";
+        document.getElementById('alta3').style.transform = "rotate(-48deg)";
+        document.getElementById('alta3').style.transition = "all 3s ease";
+        document.getElementById('alta4').style.transform = "rotate(-68deg)";
+        document.getElementById('alta4').style.transition = "all 3s ease";
+        document.getElementById('alta5').style.transform = "rotate(-88deg)";
+        document.getElementById('alta5').style.transition = "all 3s ease";
+    }
+
+    function iphone1color() {
+        document.getElementById('Fix_pic').src = "iphone11-black.png";
+        document.getElementById('background').style.background = "#5b5958";
+        document.getElementById('Fix_pic').style.right = "140px";
+        document.getElementById('title').style.color = "#3a3838";
+        document.getElementById('rotate_btn').style.display = "block";
+        document.getElementById('rotate_btn').style.background = "black";
+        document.getElementById('alta1').style.display = "none";
+        document.getElementById('alta2').style.display = "none";
+        document.getElementById('alta3').style.display = "none";
+        document.getElementById('alta4').style.display = "none";
+        document.getElementById('alta5').style.display = "none";
+        document.getElementById('Fix_pic').style.filter = "blur(0px)";
+    }
+    function iphone2color() {
+        document.getElementById('Fix_pic').src = "iphone11-red.png";
+        document.getElementById('background').style.background = "#f85241";
+        document.getElementById('Fix_pic').style.right = "140px";
+        document.getElementById('title').style.color = "#d62a41";
+        document.getElementById('rotate_btn').style.display = "block";
+        document.getElementById('rotate_btn').style.background = "red";
+        document.getElementById('alta1').style.display = "none";
+        document.getElementById('alta2').style.display = "none";
+        document.getElementById('alta3').style.display = "none";
+        document.getElementById('alta4').style.display = "none";
+        document.getElementById('alta5').style.display = "none";
+        document.getElementById('Fix_pic').style.filter = "blur(0px)";
+    }
+    function iphone3color() {
+        document.getElementById('Fix_pic').src = "iphone11-yellow.png"
+        document.getElementById('background').style.background = "#fed481";
+        document.getElementById('Fix_pic').style.right = "140px";
+        document.getElementById('title').style.color = "#fee580";
+        document.getElementById('rotate_btn').style.display = "block";
+        document.getElementById('rotate_btn').style.background = "#eaf03e";
+        document.getElementById('alta1').style.display = "none";
+        document.getElementById('alta2').style.display = "none";
+        document.getElementById('alta3').style.display = "none";
+        document.getElementById('alta4').style.display = "none";
+        document.getElementById('alta5').style.display = "none";
+        document.getElementById('Fix_pic').style.filter = "blur(0px)";
+    }
+    function iphone4color() {
+        document.getElementById('Fix_pic').src = "iphone11-light green.png"
+        document.getElementById('background').style.background = "#b4e0e4";
+        document.getElementById('Fix_pic').style.right = "140px";
+        document.getElementById('title').style.color = "#a4d8c3";
+        document.getElementById('rotate_btn').style.display = "block";
+        document.getElementById('rotate_btn').style.background = "#a4d8c3";
+        document.getElementById('alta1').style.display = "none";
+        document.getElementById('alta2').style.display = "none";
+        document.getElementById('alta3').style.display = "none";
+        document.getElementById('alta4').style.display = "none";
+        document.getElementById('alta5').style.display = "none";
+        document.getElementById('Fix_pic').style.filter = "blur(0px)";
+    }
+    function iphone5color() {
+        document.getElementById('Fix_pic').src = "iphone11-purple.png"
+        document.getElementById('background').style.background = "#d5c3d5";
+        document.getElementById('Fix_pic').style.right = "140px";
+        document.getElementById('title').style.color = "#cdc8d6";
+        document.getElementById('rotate_btn').style.display = "block"
+        document.getElementById('rotate_btn').style.background = "purple";
+        document.getElementById('alta1').style.display = "none";
+        document.getElementById('alta2').style.display = "none";
+        document.getElementById('alta3').style.display = "none";
+        document.getElementById('alta4').style.display = "none";
+        document.getElementById('alta5').style.display = "none";
+        document.getElementById('Fix_pic').style.filter = "blur(0px)";
+    }
+
+
+    function iphonerotate() {
+        var i;
+        document.getElementById('Fix_pic').style.transform = "rotateY(180deg)";
+        document.getElementById('Fix_pic').style.transition = "all 3s ease";
+
+
+        // if (document.getElementById('Fix_pic').style.transform < "rotateY(180deg)") {
+
+        //     document.getElementById('Fix_pic').src = "iphone11-purple.png"
+        // }
+        // else {
+        //     document.getElementById('Fix_pic').src = "iphone11-red.png";
+        // }
+    }
+    function iphoneback() {
+        document.getElementById('Fix_pic').style.transform = "rotateY(0deg)";
+        document.getElementById('Fix_pic').style.transition = "all 3s ease";
+    }
+
+</script>
+
+</html>
